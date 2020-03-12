@@ -1,0 +1,47 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">Student Information</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/contact/">Contact </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">About </a>
+          </li>
+        </ul>
+        
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="material-icons">
+                account_circle
+                </i>
+                Account
+            </button>
+            <div class="dropdown-menu dropdown-menu-right mt-2">
+              <a class="dropdown-item text-primary" href="/account/login/"> <i class="material-icons">fingerprint</i> Login</a>
+              <a class="dropdown-item text-primary" href="/account/register/"> <i class="material-icons">perm_identity</i> Register</a>
+              <hr>
+              <a class="dropdown-item text-success" href="/account/student/"><i class="material-icons">accessibility_new</i>Student</a>
+              <a class="dropdown-item text-success" href="/account/admin/"><i class="material-icons">android</i>Admin</a>
+
+              <a class="dropdown-item text-danger" href="/account/logout/"><i class="material-icons">logout</i>Logout</a>
+
+              <a class="dropdown-item text-info" href="/account/view_profile/"><i class="material-icons">check_circle</i>View Profile</a>
+              <a class="dropdown-item text-warning" href="/account/update_profile/"><i class="material-icons">build</i>Update Profile</a>
+
+
+            </div>
+          </div>
+
+    </div>
+  </nav>
